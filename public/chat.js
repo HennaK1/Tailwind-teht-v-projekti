@@ -21,9 +21,9 @@ document.querySelector("#join").addEventListener("submit", (event) => {
   socket.emit("join", username.value, room);
   username.value = "";
   document.querySelector("#join").style.display = "none";
-  document.querySelector("#msg-input").style.display = "";
-  document.querySelector("#log-out").style.display = "";
-  document.querySelector("#messages").style.display = "";
+  document.querySelector("#msg-input").style.display = "block";
+  document.querySelector("#log-out").style.display = "block";
+  document.querySelector("#messages").style.display = "block";
   roomName.innerHTML = "Olet huoneessa " + room;
 });
 

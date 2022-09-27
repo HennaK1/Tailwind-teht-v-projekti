@@ -24,7 +24,7 @@ document.querySelector("#join").addEventListener("submit", (event) => {
   document.querySelector("#msg-input").style.display = "block";
   document.querySelector("#log-out").style.display = "block";
   document.querySelector("#messages").style.display = "block";
-  roomName.innerHTML = "Olet huoneessa " + room;
+  roomName.innerHTML = "Olet huoneessa: " + room;
 });
 
 socket.on("chat message", (msg, username) => {
